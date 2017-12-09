@@ -9,7 +9,7 @@ class TopHeadLines(BaseNews):
         self.endpoint = "https://newsapi.org/v2/top-headlines"
 
     def get(self, sources=None, q=None, category=None, language=None, country=None, attributes_format=True):
-        '''
+        """
         Function for retrieving top headlines. For more details please refer to: https://newsapi.org/docs/endpoints/top-headlines
         :param sources: A comma-seperated string of identifiers (maximum 20) for the news sources or blogs you want headlines from.
         :param q: Keywords or phrase to search for.
@@ -18,7 +18,7 @@ class TopHeadLines(BaseNews):
         :param country: The 2-letter ISO 3166-1 code of the country you want to get headlines for. Possible options: araubrcacndeesfrgbhkieinisitnlnopkrusasvusza Default: all countries returned.
         :param attributes_format: If true then returns a attribute dictionary format object, otherwise a jason string
         :return: A jason string that describes the News
-        '''
+        """
 
         ## For logging
         # http_client.HTTPConnection.debuglevel = 1
